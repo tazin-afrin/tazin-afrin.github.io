@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Tazin Afrin</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html">Tazin Afrin<span class="logo_colour"></span></a></h1>
+          <h2>PhD Student, University of Pittsburgh</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li><a href="index.html">Home</a></li>
+            <li><a href="education.html">Education</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="files/tazinafrin.pdf">Resume</a></li>
+		  <li class="selected"><a href="teaching.html">Teaching</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+        <button class="accordion"><h4>Summer 2017 : CS1530 Software Engineering</h4></button>
+		<div class="panel">
+			<ul data-role="listview">
+				<li>Course Website : <a href="https://github.com/laboon/CS1530_Summer2017">CS1530</a></li>
+			</ul>
+		</div>
+		<button class="accordion"><h4>Spring 2017 : CS449 Introduction to Systems Software</h4></button>
+		<div class="panel">
+			<ul data-role="listview">
+				<li>Introduction to UNIX and C <a href="cs449s17/cs0449-lab1.pdf">Lab1</a> <a href="cs449s17/cs0449-lab1-thoth.pdf">Lab1-thoth</a>  
+					<p>Recitation has been cancelled due to illness. Please do the lab on your own and submit.</p></li>
+				<li>Console I/O in C <a href="cs449s17/cs0449-lab2.pdf">Lab2</a></li>
+				<li>Strings and Pointers Manipulation in C <a href="cs449s17/cs0449-lab3.pdf">Lab3</a></li>
+				<li>Linked List : Malloc and Free <a href="cs449s17/cs0449-lab4.pdf">Lab4</a></li>
+				<li>GDB Lab <a href="cs449s17/cs0449-lab5.pdf">Lab5</a></li>
+				<li>Shared Object Lab <a href="cs449s17/cs0449-lab6.pdf">Lab6</a></li>
+				<li>Processes and Error Handling <a href="cs449s17/cs0449-lab7.pdf">Lab7</a></li>
+				<li>Multi-threading and Synchronization <a href="cs449s17/cs0449-lab8.pdf">Lab8</a></li>
+			</ul>
+		</div>
+		<button class="accordion"><h4>Spring 2017 : CS2210 Compiler</h4></button>
+		<div class="panel">
+			<ul data-role="listview">
+				<li>Course Website : <a href="https://people.cs.pitt.edu/~wahn/teaching/cs2210/">CS2210 Compiler</a></li>
+			</ul>
+		</div>
+		<button class="accordion"><h4>Fall   2016 : CS449 Introduction to Systems Software</h4></button>
+		<div class="panel">
+			<ul data-role="listview">
+			  <li><a href="cs449/cs0449-2171-lab1.pdf">Lab1</a></li>
+			  <li><a href="cs449/cs0449-2171-lab2.pdf">Lab2</a></li>
+			  <li><a href="cs449/cs0449-2171-lab-pointers.pdf">Pointers-Lab2b</a></li>
+			  <li><a href="cs449/cs0449-2171-lab-gdb.pdf">GDB Lab</a></li>
+			  <li><a href="cs449/cs0449-2171-lab3.pdf">Lab3</a></li>
+			  <li><a href="cs449/cs0449-2171-lab-valgrind.pdf">Valgrind Lab</a></li>
+			  <li><a href="cs449/cs0449-2171-lab4.pdf">Lab4</a></li>
+			  <li><a href="cs449/cs0449-2171-lab5.pdf">Lab5</a></li>
+			  <li><a href="cs449/cs0449-2171-lab-heap.pdf">Lab Heap</a></li>
+			  <li><a href="cs449/cs0449-2171-lab6.pdf">Lab6 - Sockets</a></li>
+			  <li><a href="cs449/cs0449-2171-lab7.pdf">Lab7 - pthreads</a></li>
+			</ul>
+		</div>
+      </div>
+    </div>
+    <div id="footer">
+      Copyright &copy; Tazin Afrin
+    </div>
+  </div>
+  <script>
+	var acc = document.getElementsByClassName("accordion");
+	var i;
+
+	for (i = 0; i < acc.length; i++) {
+		acc[i].onclick = function(){
+			this.classList.toggle("active");
+			this.nextElementSibling.classList.toggle("show");
+	  }
+	}
+	</script>
+</body>
+</html>
